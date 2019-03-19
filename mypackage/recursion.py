@@ -8,12 +8,12 @@ def sum_array(array):
 def fibonacci(n):
 
     '''Return nth term in fibonacci sequence'''
-    if n<=1:
-        return n
+    if n==1:
+        return 0
     elif n==2:
         return 1
     else:
-        return fibonacci(n-1)+fibonacci(n-2)
+        return Fibonacci(n-1)+Fibonacci(n-2)
 
 def factorial(n):
 
