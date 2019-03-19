@@ -8,8 +8,8 @@ def sum_array(array):
 def fibonacci(n):
 
     '''Return nth term in fibonacci sequence'''
-    if n==1:
-        return 0
+    if n<=1:
+        return n
     elif n==2:
         return 1
     else:
@@ -29,4 +29,4 @@ def reverse(word):
     if len(word)==0:
         return word
     else:
-        return reverse(word[1:]) + word[0]        
+        return reverse(word[1:]) + word[0]
