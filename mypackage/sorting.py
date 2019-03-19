@@ -1,12 +1,12 @@
 def bubble_sort(items):
 
     '''Return array of items, sorted in ascending order'''
-    for n in range(len(items)-1,0,-1):
-        for i in range(n):
+    for passnum in range(len(items)-1,0,-1):
+        for i in range(passnum):
             if items[i]>items[i+1]:
-                x = items[i]
+                temp = items[i]
                 items[i] = items[i+1]
-                items[i+1] = x
+                items[i+1] = temp
         return items
 
 def merge(l, r):
@@ -37,4 +37,3 @@ def merge_sort(items):
     r = merge_sort(items[half:])
 
     return merge(l, r)
-    
